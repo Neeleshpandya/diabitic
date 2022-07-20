@@ -44,7 +44,7 @@ def predict_diabetes(data:diabetes):
     prediction = classifier.predict([[pregnancies,glucose,bloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
     output = prediction[0]
     if output == 0:
-        output="Diabetes : No"
+        prediction="Diabetes : No"
     else:
         prediction="Diabetes : yes"
     return {
